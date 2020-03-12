@@ -88,7 +88,7 @@ body {
        display: none;
     }
     .nav-links:hover {
-        color: red;
+        color: #e62b1e;
     }
 }
 
@@ -284,4 +284,16 @@ body {
         padding: 15px;
         width: 50%;
     }
+}
+
+.test {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.test::before {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
 }

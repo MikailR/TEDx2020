@@ -4,33 +4,27 @@
         <title>TEDxUW 2020 Home</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav-style.css">
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
         <script src="./js/fitty.min.js"></script>
         <script src="./node_modules/rellax/rellax.min.js"></script>
     </head>
     <body>
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
+        <input type="checkbox" id="navcheck" role="button" title="menu">
+        <label for="navcheck" aria-hidden="true" title="menu">
+            <span class="burger">
+                <span class="bar"></span>
             </span>
+        </label>
+        <nav id="menu">
             <a href="index.html" class="logo">
                 <img src="./assets/tedxlogo.png" alt="TEDxUW Logo" class="sm-logo">
             </a>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#" class="nav-links">HOME</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">TEAM</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">CONTACT</a>
-                </li>
-            </ul>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">TEAM</a>
+            <a href="#">CONTACT</a>
         </nav>
 
         <div class="jumbotron">
@@ -57,7 +51,7 @@
             </div>
         </section>
 
-        <div class="test-photo" data-rellax-speed="-2"></div>
+        <div class="test-photo"></div>
 
     </body>
     <script>
