@@ -9,92 +9,8 @@ body {
     font-family: "Heveltica", sans-serif;
 }
 
-.navbar {
-    height: 2.8em;
-    background-color: transparent;
-
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-
-    box-shadow: none;
-}
-
-.main-nav {
-    list-style-type: none;
-    display: none;
-}
-
-.nav-links, .logo {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
-}
-
-.main-nav li {
-    text-align: left;
-    margin: 15px; 
-}
-
-.logo {
-    display: none;
-    font-size: 22px;
-    margin-left: 20px;
-    height: 100%;
-}
-
-.sm-logo {
-    height: 100%;
-    padding: 5px;
-}
-
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer; 
-    color: #fff;
-    font-size: 24px;
-}
-
-.active {
-    display: block
-}
-
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1b1d1f;
-    }
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .main-nav li {
-        margin: 0;
-    }
-    .nav-links {
-        margin-left: 40px;
-    }
-    .logo {
-        display: inline-block;
-        margin-top: 0;
-    }
-   .navbar-toggle {
-       display: none;
-    }
-    .nav-links:hover {
-        color: #e62b1e;
-    }
-}
-
 .jumbotron {
     background-image: url('../assets/jumbotron.png');
-    background-image: url('../assets/background\ 2.png');
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
@@ -102,11 +18,10 @@ body {
     width: 100%;
 
     position: relative;
-    /* top: 2.8em; */
     left: 0;
 }
 
-.flex-content {
+.jumbotron-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,40 +35,30 @@ body {
     width: 100%;
 }
 
-.text-container {
-    width: 60%;
-}
+/* .text-container {
 
-.sub-title-container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-.title, .sub-title {
-    font-weight: 500;
-    color: #d1d2d4;
-    color: #fff;
-    margin: 0;
-}
-
-.sub-title {
-    margin: 10px;
-    text-align: center;
-}
+} */
 
 .arrow-container {
     position: absolute;
-    bottom: -100px;
-    height: 300px;
+    height: 50px;
+    width: 50px;
+    left: calc(50% - 25px);
+    bottom: 20px;
 }
 
 .arrow {
+    height: 100%;
+    width: 100%;
     opacity: 0;
+    background-image: url('/assets/down-prompt-white.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform-origin: 50% 50%;
+    top: 75%;
     transform: translate3d(-50%, -50%, 0);
 }
 
@@ -164,32 +69,10 @@ body {
     animation: arrow-movement 2s 1s ease-in-out infinite;
 }
 
-.arrow:before,
-.arrow:after {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 3px; 
-    position: absolute;
-        top: 0;
-        left: 0;
-    width: 30px;
-}
-
-.arrow:before {
-    transform: rotate(45deg) translateX(-23%);
-    transform-origin: top left;
-}
-
-.arrow:after {
-    transform: rotate(-45deg) translateX(23%);
-    transform-origin: top right;
-}
-
 @keyframes arrow-movement {
     0% { 
         opacity: 0;
-        top: 45%;
+        top: 25%;
     }
     70% {
         opacity: 1;
@@ -223,7 +106,7 @@ body {
     margin-top: 10px;
 }
 
-.test-photo {
+.background-2 {
     background-image: url('../assets/jumbotron.png');
     background-size: cover;
     background-position-x: center;
@@ -233,48 +116,11 @@ body {
     width: 100%;
 
     position: relative;
-    /* top: 2.8em; */
     left: 0;
 }
 
 
 @media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1b1d1f;
-        box-shadow: 0 1px 15px #1b1d1f;
-    }
-
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .main-nav li {
-        margin: 0;
-    }
-
-    .nav-links {
-        margin-left: 40px;
-    }
-
-    .logo {
-        display: inline-block;
-        margin-top: 0;
-    }
-
-   .navbar-toggle {
-       display: none;
-    }
-
-    .nav-links:hover {
-        color: red;
-    }
-
     .theme-description {
         flex-direction: row;
     }
@@ -284,16 +130,4 @@ body {
         padding: 15px;
         width: 50%;
     }
-}
-
-.test {
-    height: 100px;
-    width: 100px;
-    background-color: green;
-}
-
-.test::before {
-    height: 100px;
-    width: 100px;
-    background-color: purple;
 }
