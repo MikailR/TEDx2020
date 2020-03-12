@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEDxUW 2020 Home</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <script src="./js/fitty.min.js"></script>
+        <script src="./node_modules/rellax/rellax.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="index.html" class="logo">
+                <img src="./assets/tedxlogo.png" alt="TEDxUW Logo" class="sm-logo">
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">HOME</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">TEAM</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="flex-content">
+                <div class="text-container rellax" data-rellax-speed="3">
+                    <h1 class="title" id="title">PRESS PLAY</h1>
+                    <div class="sub-title-container">
+                        <h2 class="sub-title" id="sub-title">
+                            Stay tuned for updates coming soon!
+                        </h2>
+                    </div>
+                </div>
+                <div class="arrow-container rellax" data-rellax-speed="2">
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                </div>
+            </div>
+            <div class="testing"></div>
+        </div>
+        <section class="theme-description">
+            <img class="main-logo" src="assets/TEDxUW Logo 2020.png" alt="TEDxUW Logo 2020">
+            <div class="theme-text">
+                <p>Press Play is our theme for this year, and our focus is on the moment individuals decide to embark on the journey to find their sense of purpose.</p>
+            </div>
+        </section>
+
+        <div class="test-photo" data-rellax-speed="-2"></div>
+
+    </body>
+    <script>
+        fitty('#title');
+        fitty('#sub-title');
+        var rellax = new Rellax('.rellax')
+    </script>
+    <script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "tedxuw-2020",
+  "version": "1.0.0",
+  "main": "fitty.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "rellax": "^1.12.1"
+  }
+}
