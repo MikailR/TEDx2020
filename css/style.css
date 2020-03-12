@@ -107,7 +107,7 @@ body {
 }
 
 .background-2 {
-    background-image: url('../assets/jumbotron.png');
+    background-image: url('../assets/background\ 2.png');
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
@@ -129,5 +129,11 @@ body {
         margin: 0;
         padding: 15px;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron, .background-2 {
+        background-attachment: scroll;
     }
 }
