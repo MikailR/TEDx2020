@@ -91,11 +91,6 @@ nav::before {
     will-change: transform;
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-/* @media (min-width: 40em) {
-    nav::before {
-        width: 40em;
-   }
-} */
 nav a {
     margin: 0.5em 0;
     padding: 0.2em 2em;
@@ -193,6 +188,6 @@ nav a:hover, nav a:focus {
     .logo {
         display: inline-block;
         margin-right: auto;
-        margin-left: 10px;
+        margin-left: 2em;
     }
 }
